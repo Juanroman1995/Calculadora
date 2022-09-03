@@ -4,54 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="calculador.css">
-    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-    <title>Index-Calculadora</title>
+    <link href="index-calculadora.css" rel="stylesheet">
+    <script src ="index-calculadora.js" type="text/javascript" defer></script>
+    <script src ="Calculadora.js" type="text/javascript"></script>
+    <script src ="Pantalla.js" type="text/javascript"></script>
+    <title>index-calculadora</title>
 </head>
 <body>
-    <header>
-        <div class = "encabezado">
-            <div><button class="button1">Menu</button></div>
-            <div><button class="button1">opciones</button></div>
-        </div>
-    </header>
     <main>
-        <div class = "cuerpo">  
-            <div class = " calculadora">
-                <div class = "pantalla">
-                    <div class = "calculo">1321</div>
-                    <div class = "resultado">654654</div>
+        <div class="container">
+            <div class="calculadora">
+                <div class="display">
+                    <div id="valor-anterior"></div>
+                    <div id="valor-actual"></div>
                 </div>
-                <div class="1linea">
-                    <button class="button2-a">C</button>
-                    <button class="button2">&larr;</button>
-                    <button class="button2">/</button>
-                </div>
-                <div class="2linea">
-                    <button class="button2">7</button>
-                    <button class="button2">8</button>
-                    <button class="button2">9</button>
-                    <button class="button2">+</button>
-                </div>
-                <div class="3linea">
-                    <button class="button2">4</button>
-                    <button class="button2">5</button>
-                    <button class="button2">6</button>
-                    <button class="button2">-</button>
-                </div>
-                <div class="4linea">
-                    <button class="button2">1</button>
-                    <button class="button2">2</button>
-                    <button class="button2">3</button> 
-                    <button class="button2">x</button>
-                </div>
-                <div class="5linea">
-                    <button class="button2-a">0</button>
-                    <button class="button2">,</button>
-                    <button class="button2">=</button>
-                </div>
+                <button class="col-2 operador" value="raizcuadrada"><sup>(x)</sup>&#8730;</button>
+                <button class="col-2 operador" value="potencia">a<sup>(x)</sup></button>
+                <button class="col-2" onclick="display.borrarTodo()">C</button>
+                <button onclick="display.borrar()">&larr;</button>
+                <button class="operador" value="dividir">%</button>
+                <button class="numero">7</button>
+                <button class="numero">8</button>
+                <button class="numero">9</button>
+                <button class="operador" value="multiplicar">X</button>
+                <button class="numero">4</button>
+                <button class="numero">5</button>
+                <button class="numero">6</button>
+                <button class="operador" value="restar">-</button>
+                <button class="numero">1</button>
+                <button class="numero">2</button>
+                <button class="numero">3</button>
+                <button class="operador" value="sumar">+</button>
+                <button class="col-2 numero">0</button>
+                <button class="numero">.</button>
+                <button class="operador" value="igual">=</button>
             </div>
         </div>
     </main>
+    <footer>
+        <div class="footer">
+            <div class="img"></div>
+            
+            <div class="about">
+                <div class="about-container">
+                    <div class="instagram"><h2>Redes Sociales</h2></div>
+                    <div class="instagram"><a href="https://www.instagram.com/juan_ignacio_roman/"><h2>Instagram</h2></a></div>
+                </div>
+                <div class="about-container">
+                    <div class="LinkedIn"><h2>Redes Profesionales</h2></div>
+                    <div class="LinkedIn"><a href="https://www.linkedin.com/in/juan-rom%C3%A1n-esp%C3%ADnola-036543222/"><h2>LinkedIn</h2></a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
